@@ -8,6 +8,7 @@ html, body {
   grid-template-columns: 100px 1fr 100px;
   grid-template-rows: 100px 1fr 100px;
   border: 2px dotted red;
+  width: 100%;
 }
 
 header {
@@ -29,7 +30,6 @@ section {
   grid-row-start: 2;
   /*background-color: black;*/
   border: 2px dotted red;
-  padding: 1.5em;
 }
 
 aside {
@@ -44,4 +44,20 @@ footer {
   grid-row-start: 3;
   background-color: lightblue;
   border: 2px dotted red;
+}
+
+p {
+  padding: 1.5em;
+}
+
+@media (max-width: 800px) {
+  nav, aside {
+    background-color: purple;
+  }
+}
+
+@media (min-width: 401px) {
+  nav, aside {
+    background-color: orange;
+  }
 }
